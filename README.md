@@ -8,13 +8,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to run the application
 
-```
 Local web servers such as
 * [XAMPP](https://www.apachefriends.org/index.html)
 * [WAMP](http://www.wampserver.com/en/)
 
 * [Sublime](https://www.sublimetext.com/) - For reviewing the codes better
-```
 
 ## Running the tests
 
