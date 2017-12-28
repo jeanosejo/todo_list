@@ -1,0 +1,118 @@
+@font-face {
+   font-family: 'varela';
+   src: url('../css/fonts/VarelaRound-Regular.otf');
+}
+
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'varela';
+}
+
+ul li {
+    background: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px 8px 12px 40px;
+    position: relative;
+    transition: 0.2s;
+}
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+ul li:hover {
+    background: #ddd;
+}
+ul li.checked {
+    background: #888;
+    border-top: 1px solid white;
+    color: #fff;
+}
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 13px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.addBtn {
+    background-color: #0032bf;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.3s;
+    width: 25%;
+}
+.addBtn:hover {
+    background-color: #002896;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 14px 16px 14px 16px;
+}
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.edit {
+    opacity: .5;
+    padding: 12px 16px 12px 16px;
+    position: absolute;
+    right: 45px;
+    top: 0;
+}
+.edit:hover {
+    background-color: #0032bf;
+    color: white;
+}
+.edit i {
+    font-size: 14px;
+}
+
+.header {
+    background: #0032bf; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #0032bf , #0098a9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #0032bf, #0098a9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #0032bf, #0098a9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #0032bf , #0098a9); /* Standard syntax */
+    border: 0px transparent;
+    padding: 30px 40px;
+    text-align: center;
+}
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.header > .title {
+    color: white;
+    display: block;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input_title {
+    border: none;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
